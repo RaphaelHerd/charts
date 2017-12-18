@@ -8,7 +8,10 @@ controller:
     tag: "0.9.0-beta.15"
     pullPolicy: IfNotPresent
 
-  config: {}
+  config: {
+    "ssl-redirect": "true",
+    "ssl-protocols": "TLSv1.2"
+  }
   # Will add custom header to Nginx https://github.com/kubernetes/ingress-nginx/tree/master/docs/examples/customization/custom-headers
   headers: {}
 
